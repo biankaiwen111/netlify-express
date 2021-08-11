@@ -6,6 +6,7 @@ const router = express.Router();
 
 router.post("/", (req, res) => {
   //console.log(util.inspect(req.body, { showHidden: false, depth: null }));
+  console.log(req.body);
   res.json(req.body);
 });
 
