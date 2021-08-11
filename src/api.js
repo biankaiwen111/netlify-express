@@ -7,8 +7,8 @@ const router = express.Router();
 router.post("/", (req, res) => {
   //console.log(util.inspect(req.body, { showHidden: false, depth: null }));
 
-  console.log(JSON.parse(req.body.toString()););
-  res.json(JSON.parse(req.body.toString()););
+  console.log(JSON.parse(req.body.toString()));
+  res.json(JSON.parse(req.body.toString()));
 });
 
 app.use(`/.netlify/functions/api`, router);
