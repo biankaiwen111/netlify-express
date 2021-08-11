@@ -18,6 +18,7 @@ $("#major-name").on("input", function () {
 });
 
 $("#server-button").bind("click", function () {
+  console.log(document.URL);
   alert("data sent to server!");
   $.ajax({
     type: "POST",
