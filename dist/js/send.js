@@ -24,7 +24,7 @@ $("#server-button").bind("click", function () {
     type: "POST",
     data: JSON.stringify(agreement),
     contentType: "application/json",
-    url: "https://elated-chandrasekhar-a73c4d.netlify.app/.netlify/functions/api",
+    url: "https://jolly-hamilton-ea5d60.netlify.app/.netlify/functions/api",
     success: function (data) {
       console.log("success");
       console.log(JSON.stringify(data));
