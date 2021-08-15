@@ -24,10 +24,10 @@ $("#server-button").bind("click", function () {
     type: "POST",
     data: JSON.stringify(agreement),
     contentType: "application/json",
-    url: "https://jolly-hamilton-ea5d60.netlify.app/.netlify/functions/api",
+    url: "http://localhost:8888/.netlify/functions/submit",
     success: function (data) {
       console.log("success");
-      console.log(JSON.stringify(data));
+      console.log(JSON.parse(data));
     },
   });
 });
