@@ -24,7 +24,7 @@ $("#server-button").bind("click", function () {
     type: "POST",
     data: JSON.stringify(agreement),
     contentType: "application/json",
-    url: "http://localhost:8888/.netlify/functions/submit",
+    url: "./.netlify/functions/submit",
     success: function (data) {
       console.log("success");
       console.log(JSON.parse(data));
