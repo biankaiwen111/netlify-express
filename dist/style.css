@@ -1,0 +1,12 @@
+div {
+  font-size: 4rem;
+  text-align: center;
+  height: 90vh;
+  line-height: 90vh;
+  color: #fcedd8;
+  background: #ba415f;
+  font-family: "Niconne", cursive;
+  font-weight: 700;
+  text-shadow: 3px 3px 0px #eb452b, 6px 6px 0px #efa032, 9px 9px 0px #46b59b,
+    12px 12px 0px #017e7f, 15px 15px 0px #052939, 18px 18px 0px #c11a2b;
+}

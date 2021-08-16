@@ -4,25 +4,6 @@ const util = require("util");
 const app = express();
 const router = express.Router();
 
-router.post("/", (req, res) => {
-  console.log(
-    util.inspect(JSON.parse(req.body.toString()), {
-      showHidden: false,
-      depth: null,
-    })
-  );
-  res.json(JSON.parse(req.body.toString()));
-});
-
-app.use(`/.netlify/functions/api`, router);
-
-// app.post("/.netlify/functions/api/agreement", (req, res) => {
-//   //console.log(req.body["sections"][1]["content"]);
-//   //console.log("--------------");
-//   console.log(util.inspect(req.body, { showHidden: false, depth: null }));
-//   res.json(req.body);
-// });
-
 app.get("*", (req, res) => {
   res.send("Page not found!");
 });

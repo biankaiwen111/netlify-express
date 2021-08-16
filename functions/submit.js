@@ -1,11 +1,14 @@
 const Agreement = require("../model/agreement");
-
+const util = require("util");
 exports.handler = async (event, context) => {
-  console.log(JSON.parse(event.body));
-  console.log(event.httpMethod);
-  console.log(context);
+  //console.log(event.body);
+  //console.log(typeof event.body);
   return {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "*",
+    },
     statusCode: 200,
-    body: JSON.stringify(JSON.parse(event.body)),
+    body: event.body,
   };
 };
